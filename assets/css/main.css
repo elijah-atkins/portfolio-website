@@ -72,7 +72,9 @@ input, select, textarea {
 }
 
 /* Basic */
-
+	canvas {
+		border-radius: 5%;
+	}
 	@-ms-viewport {
 		width: device-width;
 	}
