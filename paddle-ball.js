@@ -136,19 +136,20 @@ function ballBrickHandling(){
       var prevBrickCol = Math.floor(prevBallX / BRICK_W);
       var prevBrickRow = Math.floor(prevBallY / BRICK_H);
       
-      var bothTestsFailed = true;
+      
 
       if(prevBrickCol != ballBrickCol){
+        var bothTestsFailed = true;
         if(isBrickAtColRow( prevBrickCol, ballBrickRow ) == false) {
           ballSpeedX *= -1;
-          bothTestFailed = false;
+          bothTestsFailed = false;
           score++;
         }
       }
       if(prevBrickRow != ballBrickRow){
-        if(isBrickAtColRow( ballBrickCol, prevBrickRow )){
+        if(isBrickAtColRow( ballBrickCol, prevBrickRow ) ==  false){
           ballSpeedY *= -1;
-          bothTestFailed = false;
+          bothTestsFailed = false;
           score++;
         }
         if(bothTestsFailed){//armpitcase prevents ball from going through diagnol
