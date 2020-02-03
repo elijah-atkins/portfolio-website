@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+
+/* Your code starts here! */
+body {
+    width: 100%;
+	margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+/*Nav bar css*/
+.navBar {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+    margin: 0;
+	padding-top: 0;
+	height: 60px;
+	width: 100%;
+	background-image: radial-gradient(farthest-corner at 20px 40px,
+	#355ba3 30%, #4c84b9 100%);
+}
+.navBar ul {
+	list-style-type: none; 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: stretch;
+	margin: 0;
+	padding: 0;
+}
+.navBar li {
+	display: inline;
+	font-size: 24px;
+}
+.nav80 {
+	display: inline-block;
+	width: 78%;
+}
+.nav20 {
+	display: block;
+	margin: 0%;
+	width: 18%;
+	float: right;
+}
+.navItem {
+	color: #ebe2e2;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 16px;
+	margin: 2%;	
+}
+.navItem:hover {
+	color: rgb(241, 245, 17);
+}
+.logo {
+	padding: 2px;
+	margin-top: 10px;
+	transform: rotate(3deg);
+
+}
+
+/*Main box to contain content behind navbar*/
+.main {
+	background-color: #ffffff;
+	margin-top: 75px;
+	margin-right: 10%;
+	margin-left: 10%;
+	border-radius: 75px;
+	border: 25px solid #fafafa;
+	box-shadow: 10px 10px 10px 0 #111e368f,
+				-10px -10px 10px 0 #111e368f;
+
+}
+/*Content holder */
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	font-size: 22px;
+}
+/* divider line */
+.lineBottom {
+	border-bottom: 1px solid black;
+}
+/* Content divider for 100% */
+.content100 {
+	display: inline-block;
+    vertical-align: middle;
+    margin: 3%;
+    width: 90%;
+}
+/* Content divider for 50% */
+.content50 {
+	display: inline-block;
+	margin: auto;
+	padding: 3%;
+    width: 50%;
+}
+/* large lettering for website */
+.content50 header{
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 120px;
+	text-align: center;
+	transform: rotate(-5deg);
+
+}
+/* button center */
+.contentB {
+	text-align: center;
+}
+/* button css settings */
+button {
+	background-color: white; 
+	border: 1px solid gray;
+	border-radius: 5px;
+	color: #355ba3;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+}
+button:hover {
+	color: white;
+	background-color: #355ba3;
+}
+/* image */
+
+.content50 .splashImg {
+	display: inline-block;
+	margin: auto;
+	border-radius:  50%;
+	
+	animation-name: flutter;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	border: 12px solid #ffffff;
+	box-shadow: 5px 5px 5px 0 #536380,
+				-5px -5px 5px 0 #ececec;
+
+}
+/* Content divider for 1/3 chunk */
+.content33 {
+	display: inline-block;
+    margin: 3%;
+	width: 25%;
+}
+/* Css for services boxes */
+.services {
+	background-color: #94b2eb;
+	border-radius: 3%;
+	box-sizing: border-box;
+	padding: 3%;
+	display: inline-block;
+	margin: 2.5%;
+	width: 45%;
+	border:  solid #355ba3;
+	border-width: 2px 4px 7px 3px;
+}
+/* css for contact infor */
+.contact {
+	display: flex;
+	justify-content: flex-start;
+	margin: 2%;
+	
+}
+.contact p {
+	font-size: 18px;
+	min-width: 200px;
+}
+/*footer css */
+.footer {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+}
+/* services header image */
+.services-header-img {
+	border-radius: 50px 50px 0 0;
+}
+
+/* css media queries */
+@media (max-width: 1140px) {
+	.footer {
+		
+	}
+	h1, h2, h3, h4, h5 {
+		font-size: 22px;
+	}
+	.navBar80 {
+		margin: 1%;
+	}
+	.navBar li {
+		font-size: 16px;
+	}
+	.content50 header{
+		font-size: 95px;
+	}
+	button {
+		font-size: 16px;
+	}
+	.content {
+		font-size: 16px;
+	}
+	.contact p {
+		font-size: 14px;
+	}
+	.footer {
+		margin-top: 0px;
+		font-size: 14px;
+	}
+	.main {
+		margin-top: 60px;
+		margin-left: 0;
+		margin-right: 0;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.services-header-img {
+		border-radius: 0 0 0 0;
+	}
+
+}
+/*Media query for phone */
+@media (max-width: 650px) {
+	.body {
+		background-color: #ffffff;
+	}
+	.nav80{
+		width: 60%;
+		margin: 1%;
+	}
+	.nav20 {
+		width: 35%;
+	}
+	.navBar li {
+		font-size: 16px;
+	}
+	.logo {
+		margin-top: 40px;
+	}
+	.main {
+		margin-top: 120px;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.navBar {
+		height: 120px;
+	}
+    .content {
+	  flex-direction: column;
+	  padding-bottom: 10%;
+	  font-size: 16px;
+	}
+	.content50 {
+		width: 80%;
+		margin-left: 10%;
+
+	}
+	.content50 .splashImg {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.content100 {
+		width: 95%;
+	}
+	.content33 {
+		width: 80%;
+		margin: 5% 10% 0% 10%;
+	}
+	.services {
+		width: 90%;
+	}
+	.content50 header{
+		font-size: 80px;
+	}
+  	.services-header-img {
+	border-radius: 0 0 0 0;
+	}
+	.footer {
+		font-size: 12px;
+		margin-top: 0px;
+		padding-top: 20px;
+		background-color: #ffffff;
+	}
+}
+/*Animations */
+@keyframes flutter {
+	0% {transform: rotate(0deg);}
+	80% {transform: rotate(-5deg);}
+	90% {transform: rotate(8deg);}
+	95% {transform: rotate(-3deg);}
+	98% {transform: rotate(3deg);}
+	100% {transform: rotate(0deg);}
+}
